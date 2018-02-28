@@ -2,7 +2,7 @@ package exerciciosdaaula;
 
 import java.util.Scanner;
 
-public class exercChar {
+public class ExercChar {
 
     public static void main(String[] args) {
         String palavra;

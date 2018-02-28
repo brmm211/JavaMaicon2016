@@ -2,7 +2,7 @@ package exercprog2;
 
 import java.util.Scanner;
 
-public class Exerc_Prog_04 {
+public class Exerc_Prog2_04 {
     
     public static void main(String[] args) {
         int quantNotas;
@@ -23,6 +23,8 @@ public class Exerc_Prog_04 {
             
             mediaPonde = somaPN / somaPeso;
         }
+        
+        
         
         System.out.println("Média ponderada: "+mediaPonde);
     }
