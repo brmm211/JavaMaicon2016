@@ -1,4 +1,4 @@
-package jm2016poocev03;
+package poocev03;
 
 public class Obj_Cev03 {
     private String modelo;

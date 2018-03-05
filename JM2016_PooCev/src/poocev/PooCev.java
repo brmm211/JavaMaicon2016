@@ -1,4 +1,4 @@
-package jm2016poocev;
+package poocev;
 
 public class PooCev {
 

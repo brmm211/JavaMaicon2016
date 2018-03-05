@@ -1,4 +1,4 @@
-package jm2016poocev02;
+package poocev02;
 
 public class CeV02 {
 

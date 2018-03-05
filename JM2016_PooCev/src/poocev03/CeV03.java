@@ -1,4 +1,4 @@
-package jm2016poocev03;
+package poocev03;
 
 public class CeV03 {
     public static void main(String[] args) {
