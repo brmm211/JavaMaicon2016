@@ -109,8 +109,6 @@ public class Lutador {
     
     public void apresentar(){
         System.out.println("----------------------------------");
-        System.out.println("It'ssss Tiiimeeeee");
-        System.out.println("----------------------------------");
         System.out.println("Apresento-lhes o lutador: "+this.getNome());
         System.out.println("Origem: "+this.getNacionalidade());
         System.out.println("Idade: "+this.getIdade());
