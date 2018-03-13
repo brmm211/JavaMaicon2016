@@ -16,5 +16,4 @@ public class Programa1 {
         programa2.calculadora(d, a, b);
 
     }
-//      shift+alt+f
 }
