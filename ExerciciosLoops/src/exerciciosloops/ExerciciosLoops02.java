@@ -1,5 +1,4 @@
 package exerciciosloops;
-
 public class ExerciciosLoops02 {
     public static void main(String[] args) {
         int total = 0;
@@ -8,10 +7,6 @@ public class ExerciciosLoops02 {
                 total = i;
                 System.out.println(total);
             }
-            
         }
-        
-        
-        
     }
 }
