@@ -12,18 +12,24 @@ public class Exerc02 {
         System.out.println("digite a quantidade de numeros: ");
         quantNum = ler.nextInt();
         
-        for (int i = 0; i <= quantNum; i++) {
+        while (quantNum > 0) {
+            int fat = 1;
             System.out.println("digite o numero desejado: ");
             numeros = ler.nextDouble();
-            if (numeros < 0) {
-                quantNumNeg+=1;
-                System.out.println(quantNumNeg);
-            }else{
+            if (numeros > 0) {
                 quantNumPos+=1;
-                System.out.println(quantNumPos);
+                for (int i = 2; i <= numeros ; i++) {
+                    fat*= i;
+                }
+                    System.out.println("Fatorial de "+(numeros)+" é: "+fat);
+                    quantNum--;
+            }else{
+                quantNumNeg+=1;
+                quantNum--;
             }
         }
-        
+                System.out.println("Quantidade de numeros positivos: "+quantNumPos);
+                System.out.println("Quantidade de numeros negativos: "+quantNumNeg);
         
     }
 }
