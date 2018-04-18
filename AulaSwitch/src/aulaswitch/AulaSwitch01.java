@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class AulaSwitch01 {
 
     public static void main(String[] args) {
-        String operacao;
+        String operacao, sair = " ";
         int a, b;
 
+       while(!"sim".equalsIgnoreCase(sair)){
         System.out.print("digite um numero: ");
         a = new Scanner(System.in).nextInt();
 
@@ -25,6 +26,10 @@ public class AulaSwitch01 {
         System.out.println("");
 
         operacoes(operacao, a, b);
+        
+           System.out.println("deseja sair: Sim ou Nao?");
+           sair = new Scanner(System.in).next();
+       }
 
     }
 
