@@ -53,6 +53,7 @@ public class Funcionario02 {
                 break;
             default:
                 System.out.println("invalido");
+                break;
         }
     }
 }
