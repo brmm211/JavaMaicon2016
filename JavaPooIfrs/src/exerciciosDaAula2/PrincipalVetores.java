@@ -15,38 +15,48 @@ import java.util.Scanner;
 public class PrincipalVetores {
 
     public static void main(String[] args) {
-        menu();
-        opcoes();
+        int op = 1;
+        while (op != 0) {
+            menu();
+            op = op();
+            if (op == 0) {
+                System.exit(0);
+            }
+            opcoes(op);
+        }
     }
 
     public static void menu() {
         System.out.println("### Bem-vindo ###");
         System.out.println("vetor inicializado");
-        System.out.println("[0] Exibir Vetor");
-        System.out.println("[1] ordem crescente");
-        System.out.println("[2] ordem decrescente");
-        System.out.println("[3] Sair");
+        System.out.println("[1] Exibir Vetor");
+        System.out.println("[2] ordem crescente");
+        System.out.println("[3] ordem decrescente");
+        System.out.println("[0] Sair");
     }
-    public static void opcoes(){
-        
+
+    public static int op() {
         System.out.print("Escolha uma opçao: ");
         int op = new Scanner(System.in).nextInt();
-        
-        switch(op){
-            case 0:
+        return op;
+    }
+
+    public static void opcoes(int op) {
+        switch (op) {
+            case 1:
                 mostrarVetor();
                 break;
-            case 1:
+            case 2:
                 ordenaCrescente();
                 break;
-            case 2:
+            case 3:
                 ordenaDecrescente();
                 break;
-            case 3:
+            case 0:
                 System.exit(0);
                 break;
         }
-        
+
     }
 
     public static int[] inicializarVetor() {
@@ -56,10 +66,10 @@ public class PrincipalVetores {
         }
         return vetor;
     }
-    
-    public static void mostrarVetor(){
+
+    public static void mostrarVetor() {
         int[] vet = inicializarVetor();
-        System.out.println("Vetor: "+Arrays.toString(vet));
+        System.out.println("Vetor: " + Arrays.toString(vet));
     }
 
     public static void ordenaCrescente() {
