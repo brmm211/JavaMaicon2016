@@ -11,7 +11,9 @@ public class TesteLampada {
         lampada1.setVidaUtil(1000);
         lampada1.setPotencia(50);
         
+        boolean ligada = lampada1.ligar();
         lampada1.status();
+        System.out.println("ligada: "+ligada);
         
     }
 }

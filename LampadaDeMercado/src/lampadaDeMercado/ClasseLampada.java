@@ -66,4 +66,12 @@ public class ClasseLampada {
         System.out.println("Potencia: "+getPotencia()+" watts");
     }
     
+    public boolean ligar(){
+        return true;
+    }
+    
+    public boolean desligar(){
+        return false;
+    }
+    
 }
